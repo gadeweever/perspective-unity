@@ -20,4 +20,9 @@ public class CameraFly : MonoBehaviour {
 		transform.position = Vector3.Lerp(transform.position, new Vector3(positionnow.x,positionnow.y,positionnow.z+1), .2f);
 	}
 	
+	void CheckHit()
+	{
+		
+	}
+	
 }

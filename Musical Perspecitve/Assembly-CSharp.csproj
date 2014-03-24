@@ -46,6 +46,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CameraFly.cs" />
      <Compile Include="Assets\Scripts\DistanceGenerator.cs" />
+     <Compile Include="Assets\Scripts\Note.cs" />
      <Compile Include="Assets\Scripts\NoteWriter.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
