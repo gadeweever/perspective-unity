@@ -2,22 +2,27 @@
 using System.Collections;
 
 public class CameraFly : MonoBehaviour {
-
+	
+	public GameObject hitTester;
+	public Transform target;
 	// Use this for initialization
 	void Start () {
-	
+		//hitTester.transform.parent = this.transform;
+		//target.position = Vector3.forward;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		Move();
+		target.position = Move();
+		
 	}
 	
 	//moves the camera forward along the Z axis
-	void Move()
+	Vector3 Move()
 	{
 		Vector3 positionnow = transform.position;
 		transform.position = Vector3.Lerp(transform.position, new Vector3(positionnow.x,positionnow.y,positionnow.z+1), .2f);
+		return transform.position;
 	}
 	
 	void CheckHit()
