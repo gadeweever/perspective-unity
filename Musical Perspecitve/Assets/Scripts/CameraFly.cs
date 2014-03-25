@@ -4,7 +4,7 @@ using System.Collections;
 public class CameraFly : MonoBehaviour {
 	
 	public GameObject hitTester;
-	public Transform target;
+	
 	// Use this for initialization
 	void Start () {
 		//hitTester.transform.parent = this.transform;
@@ -13,7 +13,7 @@ public class CameraFly : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		target.position = Move();
+		Move();
 		
 	}
 	
@@ -28,6 +28,11 @@ public class CameraFly : MonoBehaviour {
 	void CheckHit()
 	{
 		
+	}
+	
+	void OnTriggerEnter(Collider other)
+	{
+		Debug.Log("Wow, such collision");
 	}
 	
 }
