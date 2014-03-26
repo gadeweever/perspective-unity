@@ -25,14 +25,30 @@ public class CameraFly : MonoBehaviour {
 		return transform.position;
 	}
 	
-	void CheckHit()
-	{
-		
-	}
 	
+		
+	#region Triggers
+	// debugging purposes
 	void OnTriggerEnter(Collider other)
 	{
 		Debug.Log("Wow, such collision");
+		if(Input.anyKeyDown)
+			Debug.Log("Wow, you hit a note");
 	}
+	
+	void OnTriggerStay(Collider other)
+	{
+		
+		if(Input.anyKeyDown)
+			Debug.Log("Wow, you hit a note");
+	}
+	
+	void OnTriggerExit(Collider other)
+	{
+		
+		Destroy(other.gameObject, 2f);
+	}
+	#endregion
+	
 	
 }
