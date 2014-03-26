@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CameraFly.cs" />
+     <Compile Include="Assets\Scripts\Currencies.cs" />
      <Compile Include="Assets\Scripts\DistanceGenerator.cs" />
      <Compile Include="Assets\Scripts\Note.cs" />
      <Compile Include="Assets\Scripts\NoteWriter.cs" />

@@ -33,14 +33,20 @@ public class CameraFly : MonoBehaviour {
 	{
 		Debug.Log("Wow, such collision");
 		if(Input.anyKeyDown)
+		{
 			Debug.Log("Wow, you hit a note");
+			Destroy(other.gameObject);
+		}
 	}
 	
 	void OnTriggerStay(Collider other)
 	{
 		
 		if(Input.anyKeyDown)
+		{
 			Debug.Log("Wow, you hit a note");
+			Destroy(other.gameObject);
+		}
 	}
 	
 	void OnTriggerExit(Collider other)
