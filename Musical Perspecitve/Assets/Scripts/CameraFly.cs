@@ -40,7 +40,7 @@ public class CameraFly : MonoBehaviour {
 		if(Input.anyKeyDown)
 		{
 			Debug.Log("Wow, you hit a note");
-			currentValues.AddValue(other.gameObject.GetComponent<Note>().noteValue);
+			currentValues.AddValue(other.gameObject.GetComponent<Note>());
 			Debug.Log(currentValues.score);
 			Destroy(other.gameObject);
 		}
