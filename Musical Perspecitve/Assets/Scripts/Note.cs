@@ -25,6 +25,8 @@ public class Note : MonoBehaviour {
 	public bool isDraggable;
 	// noteValue: determines the points gotten from a note
 	public int noteValue;
+	// note type
+	
 		
 	
 	
