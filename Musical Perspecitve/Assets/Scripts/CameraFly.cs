@@ -3,12 +3,17 @@ using System.Collections;
 
 public class CameraFly : MonoBehaviour {
 	
-	public GameObject hitTester;
-	
+	// currentValues, type Currencies: gotten from game object in level
+	// holds the current relevant information for the game at hand
+	// current holder holds the game object
+	public GameObject currencyHolder;
+	public Currencies currentValues;
 	// Use this for initialization
 	void Start () {
 		//hitTester.transform.parent = this.transform;
 		//target.position = Vector3.forward;
+		
+		currentValues = currencyHolder.GetComponent<Currencies>();
 	}
 	
 	// Update is called once per frame
@@ -35,6 +40,8 @@ public class CameraFly : MonoBehaviour {
 		if(Input.anyKeyDown)
 		{
 			Debug.Log("Wow, you hit a note");
+			currentValues.AddValue(other.gameObject.GetComponent<Note>().noteValue);
+			Debug.Log(currentValues.score);
 			Destroy(other.gameObject);
 		}
 	}
@@ -45,6 +52,8 @@ public class CameraFly : MonoBehaviour {
 		if(Input.anyKeyDown)
 		{
 			Debug.Log("Wow, you hit a note");
+			currentValues.AddValue(other.gameObject.GetComponent<Note>().noteValue);
+			Debug.Log(currentValues.score);
 			Destroy(other.gameObject);
 		}
 	}
