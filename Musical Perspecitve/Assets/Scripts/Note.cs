@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Note : MonoBehaviour {
 	
+	
+	// noteType : specifies the kind of note class is currently on the note
 	public class StandardNote{
 		
 

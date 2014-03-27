@@ -17,5 +17,8 @@ public class GUIRenderer : MonoBehaviour {
 	void OnGUI()
 	{
 		GUI.Box(new Rect (0,0,100,50), currentValues.score.ToString());
+		GUI.Box(new Rect (50,0,100,50), currentValues.streak.ToString());
+		GUI.Box(new Rect (50,0,100,50), currentValues.multiplier.ToString());
+
 	}
 }
