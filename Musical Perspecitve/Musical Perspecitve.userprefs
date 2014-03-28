@@ -1,10 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CameraFly.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Note.cs">
     <Files>
-      <File FileName="Assets\Scripts\CameraFly.cs" Line="67" Column="2" />
+      <File FileName="Assets\Scripts\Note.cs" Line="11" Column="3" />
+      <File FileName="Assets\Scripts\CameraFly.cs" Line="55" Column="72" />
       <File FileName="Assets\Scripts\Currencies.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Note.cs" Line="29" Column="3" />
       <File FileName="Assets\Scripts\GUIRenderer.cs" Line="1" Column="1" />
     </Files>
     <Pads>
@@ -13,7 +13,7 @@
           <Node name="Assembly-CSharp" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="CameraFly.cs" selected="True" />
+                <Node name="Note.cs" selected="True" />
               </Node>
             </Node>
           </Node>

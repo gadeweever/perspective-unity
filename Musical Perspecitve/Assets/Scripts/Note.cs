@@ -5,8 +5,11 @@ public class Note : MonoBehaviour {
 	
 	
 	// noteType : specifies the kind of note class is currently on the note
-	public class StandardNote{
-		
+	public enum noteType
+	{
+		Standard,
+		Draggable
+	}
 
 	// lives: the amount of notes needed to be dragged into this
 	// before it is destroyed
@@ -25,17 +28,25 @@ public class Note : MonoBehaviour {
 	// isHittable: determines whether the note can be destroyed simply
 	// by tapping the screen. if false, we should determine it should be dragged
 	public bool isHittable;
-	
 	// noteValue: determines the points gotten from a note
 	public int noteValue;
+	
+	void Start()
+	{
+		NoteSetup();
 	}
 	
-	public class DraggableNote : StandardNote{
-		// isDraggable: refer to the above logic. Should only be draggable 
-		// when the note is in range
-		public bool isDraggable;
+	public int GetNoteValue()
+	{
+		return this.noteValue;
+	}
+	
+	private void NoteSetup()
+	{
 		
 	}
+	
+	
 	
 	
 }
