@@ -36,11 +36,14 @@ public class Note : MonoBehaviour {
 		NoteSetup();
 	}
 	
+	
 	public int GetNoteValue()
 	{
 		return this.noteValue;
 	}
 	
+	// noteSetup: sets any new spanwed notes with default valeus
+	// if a note is spawnd as a draggable note, its parent should be that which spawned it
 	private void NoteSetup()
 	{
 		

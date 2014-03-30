@@ -38,11 +38,13 @@ public class NoteWriter : MonoBehaviour {
 		Draw();
 	}
 	
+	// draw instantiates everything in the seed function 
 	void Draw()
 	{
 
 		for(int i = 0 ; i < noteGenerator.phasePositions[noteGenerator.nextPhaseCalc -1] ; i++)
 		{
+			// quarternerion at -90 for rotaion of prefab
 			Instantiate(prefab,noteGenerator.notePositions[currentNoteDraw], Quaternion.Euler(0,-90,0));
 			currentNoteDraw++;
 		}

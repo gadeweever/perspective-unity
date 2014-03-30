@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class Currencies : MonoBehaviour {
 	
@@ -19,6 +20,7 @@ public class Currencies : MonoBehaviour {
 		multiplier = 1;
 		streak = 0;
 		multiplierConstant = 10;
+		maxNatural = 5;
 	}
 	
 	// Add score, takes the multiplier and multiplies the value
